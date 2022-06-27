@@ -57,7 +57,7 @@
 </style>
 <div class="post block">
     <div class="card mt-4" style="padding: 3rem;">
-
+       {% csrf_token %}
         <h2 class="subtitle" class=" ">{{ post.title }}</h2>
 
         <small class="para1">Posted at {{ post.date_added }}</small>
