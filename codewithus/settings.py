@@ -82,19 +82,15 @@ WSGI_APPLICATION = 'codewithus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-DATABASES={
-    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgresqladmin', 
-        'PASSWORD': 'Khushpreet@1', 
-        'HOST': 'myserver-db.postgres.database.azure.com', 
-        'PORT': '5432', 
+        'NAME': 'studyanywhere',
+        'USER': 'veer',
+        'PASSWORD': 'Khushpreet@1',
+        'HOST': 'myadmin.postgres.database.azure.com',
+        'PORT': '5432',
+        'OPTIONS':{
+        'sslmode':'require',
+       }, 
     }
 }
 
