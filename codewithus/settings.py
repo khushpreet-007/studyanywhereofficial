@@ -30,10 +30,8 @@ ALLOWED_HOSTS = ['studyanywhere.azurewebsites.net', '127.0.0.1']
 
 # Application definition
 
-CSRF_TRUSTED_ORIGINS = ['https://studyanywhere.azurewebsites.net','https://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://studyanywhere.azurewebsites.net','https://.127.0.0.1']
 
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -79,6 +77,8 @@ WSGI_APPLICATION = 'codewithus.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+
 
 DATABASES = {
     'default': {
